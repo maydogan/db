@@ -14,7 +14,7 @@
   check dely_type default 'F',
   check (dely_date > s_order_date),
   check (s_order_no ~ '^0'),
-  check (order_status = any(array['P', 'F', 'Bo', 'C']))
+  check (order_status = any(array['process', 'fulfilled', 'backorder', 'canceled']))
   
 
 );
