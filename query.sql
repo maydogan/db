@@ -9,7 +9,7 @@
   drop view client_view;
 9.create view salesman_list_view as select s_order_no from sales_order where s_order_date = current_date;
 
-10. select client_master.name, product_master.description from sales_order_details inner join sales_order on sales_ordr_no = sales_order_details.s_order_no inner join product_master on product_master.product_no = sales_order_details.produer join client_master on client_master.client_no = sales_order.client_no WHERE sales_order.s_order_date > (current_date l '10' day);
+10.~~~~
 
 
 
