@@ -1,6 +1,6 @@
 ﻿ 
 CREATE TABLE client_master
-( client_no varchar(6) CONSTRAINT pk_cmcreateso PRIMARY KEY,
+( client_no varchar(6) primary key,
   name varchar(20),
   address1 varchar(30),
   address2 varchar(30),

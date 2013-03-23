@@ -1,5 +1,5 @@
  CREATE TABLE product_master
-( product_no varchar(6) PRIMARY KEY,
+( product_no varchar(6) primary key,
   description varchar(20),
   profit_percent numeric(20),
   unit_measure varchar(20),
