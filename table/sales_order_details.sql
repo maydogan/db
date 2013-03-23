@@ -3,8 +3,8 @@
   product_no varchar(6) ,
   qty_order numeric(8),
   qty_disp numeric(8),
-  product_rate numeric(10,2), 
-  CONSTRAINT pd_no_fk FOREIGN KEY(product_no) REFERENCES product_master(product_no),
-  CONSTRAINT so_no_fk FOREIGN KEY(s_order_no) REFERENCES sales_order(s_order_no)
+  product_rate numeric(10,2),   
+  CONSTRAINT fk_cmcreatesod FOREIGN KEY (product_no) REFERENCES product_master (product_no),
+  CONSTRAINT fk_socreatesod FOREIGN KEY (s_order_no) REFERENCES sales_order (s_order_no)
 
 );
