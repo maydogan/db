@@ -1,5 +1,5 @@
 ﻿CREATE TABLE salesman_master
-( salesman_no varchar(6) CONSTRAINT sm_no_fk primary key, 
+( salesman_no varchar(6) primary key, 
   sal_name varchar(20) NOT NULL,
   address varchar(20)  NOT NULL,
   city varchar(20),
