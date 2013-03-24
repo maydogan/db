@@ -6,7 +6,7 @@
 6. create  view  client_view  as select client_no, name, address1 as add1, address2 as add2, city, pincode as pcode, state from client_master;
 7. create  view  client_view_show as select name from client_view where city = 'Bombay';
 8. drop    view  client_view_show;
-   drop view client_view;
+   drop    view client_view;
 9. create  view  salesman_list_view as select s_order_no from sales_order where s_order_date = current_date;
 
 10.~~~~
